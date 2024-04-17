@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persolan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d3a72044f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images\logo_.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Domain Expert as DevOps Engineer</p>
+                <h1>Hi, I'm <span>Soham </span> Deshmukh <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------About--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/DSC_3804.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An independent and self-motivated graduate. to work with an organization where I can learn
+                        new skills and increase my ability for the organization's goals as well as myself. I can utilize the
+                        extensive knowledge gained during my course.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><SPAN>Ansible, Jenkins, LM</SPAN><br>Developing and maintaining the CI/CD process for all the applications and their builds using tools like Jenkins, Git, Ansible, etc., and using LogicMonitor to proactively monitor the health, performance, and availability of infrastructure components and applications.</li>
+                            <br><li><SPAN>React Development</SPAN><br>I've focused on mastering React fundamentals. Understanding concepts like components, state management, and props has been crucial for building robust and scalable applications</li>
+                            <br><li><SPAN>Java Development</SPAN><br>Central to my journey has been a deep dive into Java fundamentals. Understanding concepts like object-oriented programming, data structures, and algorithms has provided me with a solid foundation for building complex and innovative solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><SPAN>March 2023 - Current</SPAN><br>Domain Expert as DevOps Engineer at Wipro<br><br>
+                                📈 As part of the Wipro team, I am responsible for developing and maintaining the CI/CD process for all the applications and their builds using tools like Jenkins, Git, etc.<br> I would be automating the configuration management across the infrastructure and platforms using configuration management tools like Ansible, etc., and using LogicMonitor to proactively monitor the health, performance, and availability of infrastructure components and applications. <br>Configure alerts and notifications to promptly identify and address any issues, minimizing downtime and ensuring optimal system performance.
+                                
+                               <br><br> I'm committed to driving efficiency and scalability through innovative DevOps practices. My journey with Ansible has not only equipped me with technical expertise but also instilled a mindset of continuous improvement and adaptability in the ever-evolving landscape of IT infrastructure management.</li>
+                            
+                            </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><SPAN>2023-Current</SPAN><br>M.Tech. Software Engineering from BITS Pilan </li>
+                            <!-- <li><SPAN>2019-2022</SPAN><br>Bsc(cs) from MGM College of CS & IT, Nanded</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------Services--------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Logic Monitor</h2>
+                    <p>By continuously monitoring the health, performance, and availability of infrastructure components and applications, LogicMonitor provides real-time insights into the IT environment, enabling organizations to identify and address issues before they impact operations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Web App</h2>
+                    <p>Design is key to capturing users' attention and delivering exceptional experiences. Leveraging React's flexibility and ecosystem of UI libraries like Material-UI or Ant Design, we'll craft stunning user interfaces that are not only visually appealing but also intuitive and user-friendly</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-image"></i>
+                    <h2>Desktop App</h2>
+                    <p>the power of Spring Boot, a lightweight and opinionated framework that simplifies the development of Java-based web applications. With its built-in features like auto-configuration and dependency injection, Spring Boot enables rapid development without compromising flexibility.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------protfolio----------------- -->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------contact------------------ -->
+    <div id="contact">
+        <div class="cantainer">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-share-from-square"></i>sohamdeshmukh611@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/justtt.3d/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/soham-deshmukh-142939225" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UC4370Lub-ZyqPuaJ62J0HHQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://discord.gg/2Mr4hh7F2h" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <a href="images/Soham D Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Soham. Made with<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemen = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+    </script>     
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyH_3v3732cQVeFlDZ0X6WuZKa6YFHOWqiPy2AX2pgNklmdV8NJdlGLnH9HG0H0W2A2xw/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+    
+            // Displaying a loading message while waiting for the response
+            msg.innerHTML = "Sending message...";
+            
+            // Disable the form during submission to prevent multiple submissions
+            form.querySelector('button[type="submit"]').disabled = true;
+    
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => response.json())
+                .then(data => {
+                    // Checking the response from the server
+                    if (data.result === "success") {
+                        // If successful, display success message and reset form
+                        msg.innerHTML = "Message sent successfully";
+                        form.reset();
+                    } else {
+                        // If not successful, display error message
+                        msg.innerHTML = "Error: Message not sent. Place Resent it";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    // Displaying error message
+                    msg.innerHTML = "Error: Message not sent. Place Resent it";
+                })
+                .finally(() => {
+                    // Re-enable the form after submission
+                    form.querySelector('button[type="submit"]').disabled = false;
+                });
+        });
+    </script>
+    
+</body>
+
+</html>
